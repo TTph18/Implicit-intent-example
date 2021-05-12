@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_layout"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Chat.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.Chat.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_media_next" />
+
+    <EditText
+        android:id="@+id/text_input_first"
+        android:layout_width="339dp"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom|center"
+        android:hint="Enter text" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="199dp"
+        android:layout_height="63dp"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:text="Submit"/>
+
+
+</LinearLayout>
